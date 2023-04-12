@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_payment_method_title"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="@+id/titleTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTv" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:theme="@style/RadioButtonAndroidH5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv">
+
+            <RadioButton
+                android:id="@+id/visaMasterCardRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:paddingTop="@dimen/margin_default_input"
+                android:paddingBottom="@dimen/margin_default_input"
+                android:text="@string/visa_mastercard" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_default_input"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@drawable/card_background_corners"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cardNumberTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_default_input"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:text="@string/card_number"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/cardNumberTil"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+                    android:id="@+id/cardNumberTil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNumberTitle"
+                    inputTxtLayout:hint="XXXX XXXX XXXX XXXX"
+                    inputTxtLayout:boxStrokeColor="@color/box_stroke_color_checkout_screen" />
+
+
+                <TextView
+                    android:id="@+id/expirationTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/expiration"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/dateAndYearTil"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNumberTil" />
+
+
+                <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+                    android:id="@+id/dateAndYearTil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="36dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/securityCodeTil"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expirationTitle"
+                    app:layout_constraintVertical_bias="0.0"
+                    inputTxtLayout:hint="MM/YY"
+                    inputTxtLayout:boxStrokeColor="@color/box_stroke_color_checkout_screen" />
+
+                <TextView
+                    android:id="@+id/securityCode"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/secuity_code"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/securityCodeTil"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNumberTil" />
+
+
+                <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+                    android:id="@+id/securityCodeTil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/cardNumberTil"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dateAndYearTil"
+                    app:layout_constraintTop_toBottomOf="@+id/expirationTitle"
+                    inputTxtLayout:hint="CSV/CVV"
+                    inputTxtLayout:boxStrokeColor="@color/box_stroke_color_checkout_screen" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioButton
+                android:id="@+id/bankTransferRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:paddingTop="@dimen/margin_default_input"
+                android:paddingBottom="@dimen/margin_default_input"
+                android:text="@string/payment_by_bank_transfer" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bankDataContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default_input"
+                android:layout_marginTop="@dimen/margin_default_input"
+                android:layout_marginEnd="@dimen/margin_default_input"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/bankTitle"
+                    style="@style/InterMedium.HeaderH5InterMedium14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_instructions_to_make_the_payment_via_bank_transfer"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/amountTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:textColor="@color/rating_votes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bankTitle" />
+
+                <TextView
+                    android:id="@+id/amountTv"
+                    style="@style/InterRegular.Body1InterRegular16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/amountTitle"
+                    tools:text="$1004.84" />
+
+
+                <ImageView
+                    android:id="@+id/amountIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_copy_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/amountTv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/amountTv" />
+
+                <View
+                    android:id="@+id/amountDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/bank_data_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/amountTv" />
+
+
+                <TextView
+                    android:id="@+id/accountHolderTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_of_the_account_holder"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/rating_votes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/amountDivider" />
+
+                <TextView
+                    android:id="@+id/accountHolderTv"
+                    style="@style/InterRegular.Body1InterRegular16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accountHolderTitle"
+                    tools:text="buendeal.com PA" />
+
+
+                <ImageView
+                    android:id="@+id/accountHolderIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_copy_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/accountHolderTv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/accountHolderTv" />
+
+                <View
+                    android:id="@+id/accountHolderDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/bank_data_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/accountHolderTv" />
+
+                <TextView
+                    android:id="@+id/detailsTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/include_details"
+                    android:textColor="@color/rating_votes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accountHolderDivider" />
+
+                <TextView
+                    android:id="@+id/detailsTv"
+                    style="@style/InterRegular.Body1InterRegular16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTitle"
+                    tools:text="Checking Account 4010325824" />
+
+
+                <ImageView
+                    android:id="@+id/detailsIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_copy_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/detailsTv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/detailsTv" />
+
+                <View
+                    android:id="@+id/detailsDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/bank_data_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTv" />
+
+                <TextView
+                    android:id="@+id/bankNameTitle"
+                    style="@style/InterRegular.Body2InterRegular14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/bank_name"
+                    android:textColor="@color/rating_votes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsDivider" />
+
+                <TextView
+                    android:id="@+id/bankNameTv"
+                    style="@style/InterRegular.Body1InterRegular16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bankNameTitle"
+                    tools:text="Credicorp Bank" />
+
+
+                <ImageView
+                    android:id="@+id/bankNameIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_copy_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/bankNameTv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/bankNameTv" />
+
+                <View
+                    android:id="@+id/bankNameDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/bank_data_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/bankNameTv" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/continueBtn"
+            style="@style/ContainedBtnGeneralLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_huge"
+            android:text="@string/continue_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

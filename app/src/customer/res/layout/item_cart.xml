@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartItemCv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/controlsIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:src="@drawable/comparison_more_btn_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/productImage"
+            android:layout_width="80dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewCornerSize8"
+            tools:background="@color/green" />
+
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/InterRegular.CaptureInterRegular13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:lines="3"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/controlsIv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toTopOf="@+id/productImage"
+            tools:text="Dell Inspiron 13 7000, i7370-5725S 13.3'' FHD (1920 x 1080)" />
+
+
+        <TextView
+            android:id="@+id/sellerTitle"
+            style="@style/InterRegular.OverlineInterRegular10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textColor="@color/dark_gray_4"
+            app:layout_constraintBottom_toTopOf="@+id/sellerValue"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintVertical_bias="1.0"
+            android:text="@string/seller" />
+
+        <TextView
+            android:id="@+id/sellerValue"
+            style="@style/InterRegular.OverlineInterRegular11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/productImage"
+            app:layout_constraintEnd_toStartOf="@+id/price"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            tools:text="Panama PC Expert" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/comparison_divider"
+            app:layout_constraintEnd_toEndOf="@+id/price"
+            app:layout_constraintStart_toStartOf="@+id/productImage"
+            app:layout_constraintTop_toBottomOf="@+id/sellerValue" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/productImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="$409.00" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/optionRv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

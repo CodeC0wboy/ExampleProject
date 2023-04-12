@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/bg_dialog_rounded"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="title"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtitle"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_gray_1"
+            android:visibility="gone"
+            tools:text="title\n title"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnPositive"
+                style="@style/InterMedium.LabelsInterMedium14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@android:string/ok"
+                android:textColor="@color/main_blue"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/btnNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textColor="@color/dark_gray_2"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:text="title"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

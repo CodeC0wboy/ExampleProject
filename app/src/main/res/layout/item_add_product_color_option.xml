@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/addProductOptionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/main_blue"
+        android:minHeight="0dp"
+        android:paddingStart="5dp"
+        android:textAppearance="@style/InterMedium.HeaderH4InterMedium16"
+        android:translationX="-6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="White" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addProductOptionPhoto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/addProductOptionStock"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProductOptionName"
+        app:shapeAppearanceOverlay="@style/roundImageViewWriteReviews"
+        tools:background="@color/red"
+        android:foreground="@drawable/bg_item_add_product_color_option" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/addProductOptionStock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addProductOptionPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/addProductOptionName"
+        inputTxtLayout:label="Stock quantity" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/addProductOptionSKU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProductOptionStock"
+        inputTxtLayout:label="@string/sku" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/addProductOptionPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProductOptionSKU"
+        inputTxtLayout:label="@string/price" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/addProductOptionDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProductOptionPrice"
+        inputTxtLayout:label="@string/discount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

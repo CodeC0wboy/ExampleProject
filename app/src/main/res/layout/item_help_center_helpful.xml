@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/helpful"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:text="@string/was_it_helpful"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/helpPositive"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:text="@string/yes_d"
+        android:textColor="@color/main_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/helpful"
+        app:layout_constraintStart_toEndOf="@+id/helpful"
+        app:layout_constraintTop_toTopOf="@+id/helpful" />
+
+    <TextView
+        android:id="@+id/helpNegative"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:text="@string/no_d"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/helpful"
+        app:layout_constraintStart_toEndOf="@+id/helpPositive"
+        app:layout_constraintTop_toTopOf="@+id/helpful" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

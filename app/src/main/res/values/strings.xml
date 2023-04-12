@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_1_of_2">Step 1 of 2</string>
+    <string name="main_info">Main Info</string>
+    <string name="main_info_description">Before you can sell products in your store, the account has to be verified....</string>
+    <string name="set_store_avatar">Set store avatar</string>
+    <string name="avatar_description">The maximum image size is 400x400 px</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_description">Store Description</string>
+    <string name="name_validation_error">Name mustn\`t contain numbers or special characters only letters</string>
+    <string name="pass_validation_error">Password must have at least 8 characters. In case the condition isn\`t followed: “Password must have at least 8 characters</string>
+    <string name="field_must_not_be_empty">The field must not be empty</string>
+    <string name="pass_mismatch">Password mismatch</string>
+    <string name="legal_address">Legal Address</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="website_url">Website URL (optional)</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="step_2_of_2">STEP 2 OF 2</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="sign_up_success_description">A seller account has been successfully created. We recommend you to explore the following topics in the Help Center to improve your work with Buendeal</string>
+    <string name="how_to_add_products">How to add products</string>
+    <string name="when_and_how_will_i_get_paid">When and how will I get paid</string>
+    <string name="how_can_i_deliver_my_products">How can I deliver my products</string>
+    <string name="about_the_shipping_rates">About the shipping rates</string>
+    <string name="how_to_track_orders">How to track orders</string>
+    <string name="email_or_phone_number">Email or Phone number</string>
+    <string name="restore_password_description">Enter your email or phone number to recover your password</string>
+    <string name="skip">Skip</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="you_accessed_the_app_as_a_guest_ndon_t_forget_to_create_account">You accessed the app as a guest.\nDon\'t forget to create account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="filter_all">All (%1$d)</string>
+    <string name="total_price">Total price %s</string>
+    <string name="label_enter_token">Enter token</string>
+
+    <string name="first_walkthrough_title">Find the best price</string>
+    <string name="second_walkthrough_title">Collect favorite items</string>
+    <string name="finish_walkthrough_title">Compare before buy</string>
+    <string name="first_walkthrough_description">Thousands of products with the\n best price from verified sellers in\n one place</string>
+    <string name="second_walkthrough_description">Collect items you like with the wishlists\n and buy your favorite products\n whenever you can</string>
+    <string name="finish_walkthrough_description">Compare all the characteristics of\n the items you like and buy it only\n from the best sellers</string>
+    <string name="boost_your_sales_easily">Boost your sales easily</string>
+
+    <string name="server_client_id" translatable="false">637946442517-o0u10ua7lbtg82bqtmmkrhp62si3efo1.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">190757506095583</string>
+    <string name="fb_login_protocol_scheme">fb190757506095583</string>
+    <string name="store_info">Store Info</string>
+    <string name="option">Option</string>
+    <string name="main_info_2">Main info</string>
+    <string name="contact_info_2">Contact info</string>
+    <string name="change_password">Change password</string>
+    <string name="save_changes">Save changes</string>
+    <string name="cancel_changes">Cancel changes</string>
+
+    <string name="filters">Filters</string>
+    <string name="clear_all">Clear All</string>
+    <string name="applied_filters">Applied filters</string>
+    <string name="filters_s">Filters: %s</string>
+    <string name="apply_filters">Apply filters</string>
+    <string name="any">Any</string>
+    <string name="show_s_products">Show %s products</string>
+    <string name="show_products">Show products</string>
+    <string name="add_new_product">Add new product</string>
+    <string name="the_first_added_image_is_a_cover_image">The first added image is a cover image</string>
+    <string name="languages"><![CDATA[Languages<font color="#DA1414">*</font>]]></string>
+    <string name="auto_translate">Auto-translate</string>
+    <string name="add_product_language_disclaimer">When enabled, the product name and description is published in two languages by auto-translation. You can edit the text manually by selecting the second language tab</string>
+    <string name="product_name">Product Name</string>
+    <string name="sku">SKU</string>
+    <string name="sellers_url">Seller’s page URL</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="child_sub_category">Child Sub Category</string>
+    <string name="suggested_categories">Suggested Categories:</string>
+    <string name="price">Price</string>
+    <string name="discount_options">Discount options</string>
+    <string name="enter_a_fixed_discount">Enter a fixed discount amount in $ (not as a percentage)</string>
+    <string name="seo_options">SEO options</string>
+    <string name="seo_keywords_subtitle">Enter the most relevant keywords for your product, separating with a space key</string>
+    <string name="create_product">Create product</string>
+    <string name="enter_discount">Enter discount, $</string>
+    <string name="product_specifications">Product specifications</string>
+    <string name="product_specifications_subtitle">Product specifications, which will be displayed in the filters on the platform. Can\'t find the right specification?</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="select_">Select</string>
+    <string name="our_benfits">Our benefits</string>
+    <string name="onboarding_revisit_finish">Finish</string>
+    <string name="product_options">Product options</string>
+    <string name="add_product_options_sub_title">For products with different options like color, size etc.</string>
+    <string name="option_"><![CDATA[Option<font color="#DA1414">*</font>]]></string>
+    <string name="set_colors">Set colors</string>
+    <string name="apply_values">Apply Values</string>
+    <string name="option_inner_fragment_title">Select %s options</string>
+    <string name="discount">Discount</string>
+    <string name="set_options">Set options</string>
+    <string name="seller_positive_feedback">%d%% positive feedback</string>
+    <string name="seller_no_positive_feedback">No positive feedback yet</string>
+    <string name="quantity">Quantity</string>
+    <string name="product_created">Product successfully created</string>
+    <string name="error_create_product">An error occurred</string>
+    <string name="placeholder">Placeholder</string>
+</resources>

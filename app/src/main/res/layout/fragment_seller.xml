@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sellerTitle"
+        style="@style/InterRegular.Body1InterRegular16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="52dp"
+        android:paddingTop="@dimen/margin_default_input"
+        android:paddingBottom="@dimen/margin_default_input"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Apple AirPods with Charging Case..." />
+
+    <ImageView
+        android:id="@+id/sellerBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toBottomOf="@+id/sellerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sellerTitle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sellerNameImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerTitle"
+        app:shapeAppearanceOverlay="@style/roundImageViewSingleProdSellerFragment"
+        tools:background="@color/green" />
+
+    <TextView
+        android:id="@+id/sellerNameText"
+        style="@style/InterMedium.HeaderH5InterMedium14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/sellerNameImage"
+        app:layout_constraintTop_toTopOf="@+id/sellerNameImage"
+        tools:text="Headphones For All" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/viewRatingStarsSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/sellerNameImage"
+        app:layout_constraintTop_toBottomOf="@+id/sellerNameText" />
+
+    <TextView
+        android:id="@+id/daysOnPlatform"
+        style="@style/InterRegular.CaptureInterRegular13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/d_days_on_buendeal"
+        android:textColor="@color/dark_gray_2"
+        app:layout_constraintStart_toStartOf="@id/viewRatingStarsSeller"
+        app:layout_constraintTop_toBottomOf="@id/viewRatingStarsSeller" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sellerTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerNameImage"
+        app:tabTextAppearance="@style/InterMedium.LabelsInterMedium14">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/products" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="reviews" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/info" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/sellerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerTabLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

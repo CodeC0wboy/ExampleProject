@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.showcase.ShowcaseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownMenu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            inputTxtLayout:hint="Number of answers">
+
+        </com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout>
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownMenu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            inputTxtLayout:label="@string/label"
+            inputTxtLayout:hint="Number of answers" />
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownMenu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            inputTxtLayout:label="@string/label"
+            inputTxtLayout:hint="Number of answers" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/textInputLayoutPsw1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:label="@string/label_password"
+            inputTxtLayout:modePassword="true" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/textInputLayoutPsw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:label="@string/label_password"
+            inputTxtLayout:modePassword="true" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:label="@string/label_email" />
+
+        <com.dnc.buendeal.core.core.ui.view.SearchTextInputLayout
+            android:id="@+id/searchTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:hint="@string/hint_what_are_you_looking_for" />
+
+        <com.dnc.buendeal.core.core.ui.view.SearchTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:hint="@string/hint_what_are_you_looking_for"
+            android:enabled="false" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/textInputLayoutSearch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            inputTxtLayout:label="@string/label_search"
+            inputTxtLayout:searchIcon="@drawable/ic_search" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/textInputLayoutSearch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:enabled="false"
+            inputTxtLayout:label="@string/label_search"
+            inputTxtLayout:searchIcon="@drawable/selector_ic_search_enabled_disabled" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+            android:id="@+id/textAreaInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            inputTxtLayout:label="@string/label_prod_description" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+            android:id="@+id/textAreaInputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            inputTxtLayout:label="@string/label_prod_description" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+            android:id="@+id/textAreaInputLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            inputTxtLayout:label="@string/label_prod_description" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            style="@style/SwitchBND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Switch"
+            android:thumb="@drawable/selector_custom_thumb_switch" />
+
+        <com.dnc.buendeal.core.core.ui.view.ThreeStatesCheckBox
+            android:id="@+id/threeStatesCheckbox"
+            style="@style/CheckBoxBND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:text="CheckBox" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/RadioButtonBND">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <Button
+            style="@style/ContainedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/ContainedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:enabled="false"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/OutLinedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/OutLinedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:enabled="false"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+
+        <Button
+            style="@style/ContainedBtnGeneralSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/ContainedBtnGeneralSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:enabled="false"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/OutLinedBtnGeneralSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <Button
+            style="@style/OutLinedBtnGeneralSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:enabled="false"
+            android:text="Add to cart"
+            app:icon="@drawable/ic_plus_btn" />
+
+        <com.dnc.buendeal.core.core.ui.view.GoogleMaterialButton
+            android:id="@+id/smallGoogle"
+            style="@style/GoogleOutLinedBtnSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.dnc.buendeal.core.core.ui.view.GoogleMaterialButton
+            android:id="@+id/largeGoogle"
+            style="@style/GoogleOutLinedBtnLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.dnc.buendeal.core.core.ui.view.FacebookMaterialButton
+            android:id="@+id/smallFacebook"
+            style="@style/FacebookOutLinedBtnSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/FloatingBtnUP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_chevron_up" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/cardChevronLeft"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_chevron_left_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/cardChevronRight"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_chevron_right_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardShare"
+            style="@style/SmallCardViewBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_share_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/cardHeart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_heart_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/cardElements"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_elements_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:theme="@style/colorControlHighlight_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/selector_shopping_card_btn" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/threeStateBtnHeart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/selector_favorite_btn" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallCardViewBtn"
+            android:id="@+id/threeStateBtnCompare"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/selector_compare_btn" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartItemCv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/paymentMethodTitle"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/margin_default_input"
+
+            android:text="@string/payment_method"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardDataContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_default_input"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/paymentMethodTitle"
+            app:layout_constraintTop_toBottomOf="@+id/paymentMethodTitle">
+
+            <ImageView
+                android:id="@+id/visaImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/paymentData"
+                style="@style/InterRegular.CaptureInterRegular13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textColor="@color/dark_gray_1"
+                app:layout_constraintBottom_toBottomOf="@+id/visaImg"
+                app:layout_constraintStart_toEndOf="@+id/visaImg"
+                app:layout_constraintTop_toTopOf="@+id/visaImg"
+                tools:text="**** 4214" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/paymentInstructionsBtn"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:layout_marginEnd="@dimen/margin_default_input"
+            android:text="@string/payment_instructions"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/paymentByBankTransfer"
+            style="@style/InterRegular.CaptureInterRegular13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_default_input"
+            android:textColor="@color/dark_gray_1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/paymentMethodTitle"
+            app:layout_constraintTop_toBottomOf="@+id/paymentMethodTitle"
+            android:text="@string/payment_by_bank_transfer" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

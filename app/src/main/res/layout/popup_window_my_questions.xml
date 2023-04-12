@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/myQuestionsPopupTitle"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="18dp"
+        android:text="@string/answer_a_question"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/myQuestionsPopupCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintBottom_toBottomOf="@+id/myQuestionsPopupTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myQuestionsPopupTitle" />
+
+    <ImageView
+        android:id="@+id/myQuestionsPopupDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:src="@drawable/separator_category_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionsPopupTitle" />
+
+    <TextView
+        android:id="@+id/myQuestionsAnswerText"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/popup_answer_question_text"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionsPopupDivider" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+        android:id="@+id/myQuestionsPopupTextAreaInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionsAnswerText"
+        inputTxtLayout:label="@string/type_your_answer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/myQuestionsPopupBtnSubmit"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:text="@string/submit_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionsPopupTextAreaInputLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionAnswerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/questionAnswerConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:theme="@style/colorControlHighlight_blue4">
+
+            <TextView
+                android:id="@+id/questionText"
+                style="@style/InterMedium.HeaderH5InterMedium14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:textColor="@color/dark_gray_1"
+                app:layout_constraintEnd_toStartOf="@+id/questionAnswerArrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Can the wireless case still be charged with a wire?" />
+
+            <ImageView
+                android:id="@+id/questionAnswerArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:src="@drawable/question_icon_dropdown_selector"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/questionAnswerQuantityAnswers"
+                style="@style/InterRegular.Body2InterRegular14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/customer_qa_quantity_answers"
+                android:textColor="@color/dark_gray_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+            <TextView
+                android:id="@+id/questionAnswerDateAnswer"
+                style="@style/InterRegular.Body2InterRegular14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/last_date_s"
+                android:textColor="@color/dark_gray_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionAnswerQuantityAnswers" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/questionAnswerCardView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/questionAnswerSelectedQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintTop_toBottomOf="@id/questionAnswerCardView">
+
+        <TextView
+            android:id="@+id/questionUserName"
+            style="@style/InterRegular.CaptureInterRegular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:text="@string/asked_by_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/questionAnswerDateQuestion"
+            style="@style/InterRegular.CaptureInterRegular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/questionUserName"
+            tools:text="Last March 2, 2020" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/questionBtnAskQuestion"
+            style="@style/OutLinedBtnGeneralSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:paddingStart="76dp"
+            android:paddingEnd="76dp"
+            android:text="@string/answer_this_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionUserName" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/questionAnswerRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionBtnAskQuestion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

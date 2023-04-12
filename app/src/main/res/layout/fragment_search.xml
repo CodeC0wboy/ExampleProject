@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search"
+        style="@style/SearchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_what_are_you_looking_for_"
+        android:imeOptions="actionSearch"
+        android:paddingStart="52dp"
+        android:paddingTop="@dimen/margin_default_input"
+        android:paddingBottom="@dimen/margin_default_input"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/searchScreenBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toBottomOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search" />
+
+    <ImageView
+        android:id="@+id/dividerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:src="@drawable/separator_category_list"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <ImageView
+        android:id="@+id/imageViewSearchScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/ic_search_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <TextView
+        android:id="@+id/textTitleSearchScreen"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:text="@string/havent_searched"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSearchScreen" />
+
+    <TextView
+        android:id="@+id/textDescriptionSearchScreen"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/find_things_you_like"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleSearchScreen" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerSearch" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goUpButton"
+        android:visibility="gone"
+        style="@style/FloatingBtnUP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:src="@drawable/ic_chevron_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

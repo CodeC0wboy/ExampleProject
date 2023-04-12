@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/totalOrderAmountTitle"
+        style="@style/InterMedium.HeaderH5InterMedium13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:text="@string/total_order_amount"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orderTotalLabel"
+        style="@style/InterRegular.CaptureInterRegular12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:text="@string/order_total"
+        android:textColor="@color/dark_gray_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalOrderAmountTitle" />
+
+    <TextView
+        android:id="@+id/orderTotalPrice"
+        style="@style/InterMedium.HeaderH5InterMedium15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/orderTotalLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderTotalLabel"
+        tools:text="$830.00" />
+
+
+    <View
+        android:id="@+id/orderTotalDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/orderTotalLabel" />
+
+
+    <TextView
+        android:id="@+id/shippingLabel"
+        style="@style/InterRegular.CaptureInterRegular12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:text="@string/shipping"
+        android:textColor="@color/dark_gray_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderTotalDivider" />
+
+    <TextView
+        android:id="@+id/shippingPrice"
+        style="@style/InterMedium.HeaderH5InterMedium15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/shippingLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shippingLabel"
+        tools:text="$20.98" />
+
+
+    <View
+        android:id="@+id/shippingDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/shippingLabel" />
+
+
+    <TextView
+        android:id="@+id/grandTotalLabel"
+        style="@style/InterRegular.CaptureInterRegular12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:text="@string/grand_total"
+        android:textColor="@color/dark_gray_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shippingDivider" />
+
+    <TextView
+        android:id="@+id/grandTotalPrice"
+        style="@style/InterMedium.HeaderH5InterMedium15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/grandTotalLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grandTotalLabel"
+        tools:text="$850.98" />
+
+
+    <View
+        android:id="@+id/grandTotalDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/grandTotalPrice" />
+
+    <Button
+        android:id="@+id/payOrderBtn"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grandTotalDivider"
+        tools:text="Pay order $850.98" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

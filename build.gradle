@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        kotlin_version = '1.8.0'
+        flavorDimension = "user_type"
+        minSdkVersion = 24
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+        classpath "org.jmailen.gradle:kotlinter-gradle:3.6.0"
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.18.1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    apply plugin: "org.jmailen.kotlinter"
+    apply plugin: "io.gitlab.arturbosch.detekt"
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    kotlinter {
+        indentSize = 4
+        disabledRules = ["no-wildcard-imports"]
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

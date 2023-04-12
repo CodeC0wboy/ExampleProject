@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:context=".features.auth.ui.SingUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textCancel"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:paddingVertical="@dimen/margin_small"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textColor="@color/main_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/singUpTextInputLayoutFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            inputTxtLayout:label="@string/label_first_name" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/singUpTextInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpTextInputLayoutFirstName"
+            inputTxtLayout:label="@string/label_email" />
+
+        <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+            android:id="@+id/singUpTextInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpTextInputLayoutEmail"
+            inputTxtLayout:label="@string/label_password"
+            inputTxtLayout:modePassword="true"/>
+
+        <Button
+            android:id="@+id/singUpButton"
+            style="@style/ContainedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="97dp"
+            android:paddingEnd="97dp"
+            android:text="@string/sing_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpTextInputLayoutPassword" />
+
+        <com.dnc.buendeal.core.core.ui.view.TermsAndPolicyTextViewSingUp
+            android:id="@+id/singUpTermOfUse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpButton" />
+
+        <com.dnc.buendeal.core.core.ui.view.FacebookMaterialButton
+            android:id="@+id/singUpLargeFacebook"
+            style="@style/FacebookOutLinedBtnLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/continue_with_facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpTermOfUse" />
+
+        <com.dnc.buendeal.core.core.ui.view.GoogleMaterialButton
+            android:id="@+id/singUpLargeGoogle"
+            style="@style/GoogleOutLinedBtnLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="45dp"
+            android:paddingEnd="45dp"
+            android:text="@string/continue_with_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpLargeFacebook" />
+
+        <TextView
+            android:id="@+id/singUpTextSingIn"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:paddingTop="@dimen/padding_small"
+            android:text="@string/have_an_account_sign_in"
+            android:textAlignment="center"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singUpLargeGoogle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

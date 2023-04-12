@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.onboarding.ui.screens.WalkThroughFragment">
+
+    <TextView
+        android:id="@+id/textContinueGuest"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/continue_as_a_guest"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/ic_walkthrough_compare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/InterMedium.HeaderH3InterMedium20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/finish_walkthrough_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/InterRegular.Body1InterRegular16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/finish_walkthrough_description"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonCreateAcc"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="67dp"
+        android:paddingEnd="67dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textHaveAccount"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="center"
+        android:textColor="@color/main_blue"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateAcc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

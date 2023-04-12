@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fonts TextAppearance -->
+    <style name="InterMedium" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="InterRegular" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="InterRegular.Body1InterRegular20">
+        <item name="android:textSize">@dimen/text_size_H3</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Font Styles -->
+    <style name="InterMedium.HeaderH1InterMedium34">
+        <item name="android:textSize">@dimen/text_size_H1</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="InterMedium.HeaderH2InterMedium24">
+        <item name="android:textSize">@dimen/text_size_H2</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="InterMedium.HeaderH3InterMedium20">
+        <item name="android:textSize">@dimen/text_size_H3</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:letterSpacing">0.009</item>
+    </style>
+
+    <style name="InterMedium.HeaderH4InterMedium16">
+        <item name="android:textSize">@dimen/text_size_H4_B1</item>
+        <item name="android:textColor">@color/dark_gray_1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0.009</item>
+    </style>
+
+    <style name="InterMedium.HeaderH5InterMedium14">
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="android:textColor">@color/dark_gray_1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterMedium.HeaderH5InterMedium13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/dark_gray_1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterMedium.InterMedium13">
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="android:textColor">@color/dark_gray_1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterMedium.HeaderH5InterMedium15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/dark_gray_1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterMedium.HeaderH5InterMedium10">
+        <item name="android:textSize">@dimen/text_size_overline</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="InterMedium.LabelsInterMedium14">
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <style name="InterMedium.LabelsInterMedium18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <style name="InterRegular.InterRegular18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterRegular.Body1InterRegular16">
+        <item name="android:textSize">@dimen/text_size_H4_B1</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterRegular.Body2InterRegular14">
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="InterRegular.CaptureInterRegular12">
+        <item name="android:textSize">@dimen/text_size_capture</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="InterRegular.CaptureInterRegular13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="InterRegular.OverlineInterRegular10">
+        <item name="android:textSize">@dimen/text_size_overline</item>
+        <item name="android:textColor">@color/dark_gray_2</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="InterRegular.OverlineInterRegular11">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textColor">@color/dark_gray_2</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="InterMedium.OverlineInterMedium10">
+        <item name="android:textSize">@dimen/text_size_overline</item>
+        <item name="android:textColor">@color/dark_gray_2</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <style name="InterMedium.OverlineInterMedium10.SubtitleInterMedium10">
+        <item name="android:textSize">@dimen/text_size_overline</item>
+        <item name="android:textColor">@color/dark_gray_4</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+
+    <!-- Views -->
+    <style name="StyleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_H4_B1</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorTextAppearance">@style/TextAppearance.BUDEA.Error</item>
+        <item name="hintTextAppearance">@style/TextAppearance.BUDEA.Hint</item>
+        <item name="shapeAppearance">@style/Rounded</item>
+
+        <item name="materialThemeOverlay">@style/InputEditTextOverlay</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+
+        <item name="startIconTint">@color/black</item>
+        <item name="endIconTint">@color/black</item>
+        <item name="boxStrokeColor">@color/stroke_color_states_input_text_layout</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/hint_color_states_text_input_layout</item>
+    </style>
+
+    <style name="TextInputLayoutFilled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="errorTextAppearance">@style/TextAppearance.BUDEA.Error</item>
+        <item name="hintTextAppearance">@style/TextAppearance.BUDEA.Hint</item>
+        <item name="shapeAppearance">@style/Rounded</item>
+
+        <item name="materialThemeOverlay">@style/InputEditTextOverlay</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+
+        <item name="startIconTint">@color/black</item>
+        <item name="endIconTint">@color/black</item>
+        <item name="boxStrokeColor">@color/stroke_color_states_input_text_layout</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/hint_color_states_text_input_layout</item>
+    </style>
+
+    <style name="TextAppearance.BUDEA.Error" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">@dimen/text_size_capture</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.BUDEA.Hint" parent="TextAppearance.Design.Hint">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_size_capture</item>
+    </style>
+
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="TextHint" parent="TextAppearance.Design.Hint">
+        <item name="fontFamily">@font/inter_regular</item>
+
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="android:textColorHint">@color/rating_votes</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+
+    <style name="TextInputLayoutFilledBankData" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/ic_copy_gray</item>
+        <item name="hintTextAppearance">@style/TextHint</item>
+        <item name="android:textColorHint">@color/rating_votes</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="hintTextColor">@color/rating_votes</item>
+        <item name="android:textSize">@dimen/text_size_H5_B2</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+
+    <style name="TextInputTheme">
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorOnSurface">@color/dark_gray_2</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorError">@color/red</item>
+    </style>
+
+
+    <style name="TextInputCityTheme">
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorError">@color/red</item>
+    </style>
+
+    <style name="InputEditTextOverlay">
+        <item name="editTextStyle">@style/TextInputEditText</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
+        <item name="android:textSize">@dimen/text_size_H4_B1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- TextInputLayoutDropdownMenu -->
+    <style name="TextInputLayoutDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="errorTextAppearance">@style/TextAppearance.BUDEA.Error</item>
+        <item name="hintTextAppearance">@style/TextAppearance.BUDEA.Hint</item>
+        <item name="shapeAppearance">@style/Rounded</item>
+
+        <item name="materialThemeOverlay">@style/InputEditTextOverlay</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+
+        <item name="startIconTint">@color/black</item>
+        <item name="endIconTint">@color/end_icon_color_selector_drop_menu</item>
+        <item name="boxStrokeColor">@color/stroke_color_states_input_text_layout</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/hint_color_states_dropdown_menu</item>
+    </style>
+
+    <!-- SearchTextInputLayout-->
+    <style name="SearchTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorTextAppearance">@style/TextAppearance.BUDEA.Error</item>
+        <item name="hintTextAppearance">@style/TextAppearance.BUDEA.Hint</item>
+        <item name="shapeAppearance">@style/Rounded</item>
+
+        <item name="materialThemeOverlay">@style/SearchInputEditTextOverlay</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+
+        <item name="startIconTint">@color/black</item>
+        <item name="endIconTint">@color/end_icon_color_selector_search</item>
+        <item name="boxStrokeColor">@color/stroke_color_states_input_text_layout</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">@color/hint_color_states_text_input_layout</item>
+    </style>
+
+    <style name="SearchInputEditTextOverlay">
+        <item name="editTextStyle">@style/TextInputEditText</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:textColorHint">@color/hint_color_states_text_input_layout</item>
+    </style>
+
+    <!-- SearchEditText -->
+    <style name="SearchEditText">
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="android:textColorHint">@color/dark_gray_2</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+    </style>
+
+    <style name="TitleTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:theme">@style/TextInputTheme</item>
+        <item name="android:paddingTop">@dimen/margin_default_input</item>
+        <item name="android:paddingStart">@dimen/margin_medium</item>
+        <item name="android:paddingEnd">@dimen/margin_medium</item>
+        <item name="android:paddingBottom">@dimen/margin_default_input</item>
+        <item name="android:textColor">@color/black</item>
+
+
+    </style>
+
+
+    <!-- Buttons -->
+
+    <style name="SmallCardViewBtn" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="android:background">@drawable/bg_btn_white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="OutlinedBorderlessTintedButton" parent="OutLinedCommonButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/InterMedium.LabelsInterMedium14</item>
+    </style>
+
+    <style name="CardViewBtn" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">17dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="android:background">@drawable/bg_btn_white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="colorControlHighlight_blue">
+        <item name="colorControlHighlight">@color/light_blue_1</item>
+    </style>
+
+    <style name="colorControlHighMain_blue">
+        <item name="colorControlHighlight">@color/main_blue</item>
+    </style>
+
+    <style name="colorControlHighlight_blue4">
+        <item name="colorControlHighlight">@color/light_blue_4</item>
+    </style>
+
+    <style name="ContainedCommonButton" parent="Widget.MaterialComponents.Button">
+        <item name="rippleColor">@color/light_blue_1</item>
+    </style>
+
+    <style name="OutLinedCommonButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="rippleColor">@color/light_blue_1</item>
+    </style>
+
+    <style name="ContainedBtnGeneralLarge" parent="ContainedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingEnd">31dp</item>
+        <item name="android:paddingStart">31dp</item>
+        <item name="iconPadding">4dp</item>
+        <item name="rippleColor">@color/blue_2</item>
+        <item name="backgroundTint">@color/color_states_contained_btn</item>
+        <item name="android:textColor">@color/text_color_states_contained_btn</item>
+    </style>
+
+    <style name="OutLinedBtnGeneralLarge" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH5InterMedium14</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="strokeColor">@color/stroke_color_states_outlined_btn</item>
+        <item name="android:textColor">@color/text_color_states_outlined_btn</item>
+        <item name="iconPadding">4dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingEnd">31dp</item>
+        <item name="android:paddingStart">31dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="OutlinedBorderlessBtnGeneralLarge" parent="OutLinedBtnGeneralLarge">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+    </style>
+
+    <style name="OutLinedBtnGeneralHuge" parent="OutLinedBtnGeneralLarge">
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+    </style>
+
+    <style name="ShapeBtnLarge" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ContainedBtnGeneralSmall" parent="ContainedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH5InterMedium14</item>
+        <item name="shapeAppearance">@style/ShapeBtnSmall</item>
+        <item name="iconSize">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">23dp</item>
+        <item name="android:paddingStart">23dp</item>
+        <item name="iconPadding">4dp</item>
+        <item name="rippleColor">@color/blue_2</item>
+        <item name="backgroundTint">@color/color_states_contained_btn</item>
+        <item name="android:textColor">@color/text_color_states_contained_btn</item>
+    </style>
+
+    <style name="OutLinedBtnGeneralSmall" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH5InterMedium14</item>
+        <item name="shapeAppearance">@style/ShapeBtnSmall</item>
+        <item name="strokeColor">@color/stroke_color_states_outlined_btn</item>
+        <item name="android:textColor">@color/text_color_states_outlined_btn</item>
+        <item name="iconSize">16dp</item>
+        <item name="iconPadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">23dp</item>
+        <item name="android:paddingStart">23dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="GoogleOutLinedBtnSmall" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+        <item name="android:text">@string/google</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="strokeColor">@color/stroke_color_states_social_outlined_btn</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="iconPadding">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingEnd">37dp</item>
+        <item name="android:paddingStart">37dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="GoogleOutLinedBtnLarge" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="android:text">@string/sing_up_with_google</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="strokeColor">@color/stroke_color_states_social_outlined_btn</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="iconPadding">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="FacebookOutLinedBtnSmall" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+        <item name="android:text">@string/facebook</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="strokeColor">@color/stroke_color_states_social_outlined_btn</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="iconPadding">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingEnd">27dp</item>
+        <item name="android:paddingStart">27dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="FacebookOutLinedBtnLarge" parent="OutLinedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="shapeAppearance">@style/ShapeBtnLarge</item>
+        <item name="strokeColor">@color/stroke_color_states_social_outlined_btn</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="iconPadding">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:paddingStart">36dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ShapeBtnSmall" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="ContainedBtnChatWidget" parent="ContainedCommonButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH4InterMedium16</item>
+        <item name="shapeAppearance">@style/ShapeChatWidget</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+    </style>
+
+    <style name="ShapeChatWidget" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">37dp</item>
+    </style>
+
+    <style name="FloatingBtnUP" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="tint">@color/white</item>
+        <item name="rippleColor">@color/blue_2</item>
+        <item name="fabSize">mini</item>
+    </style>
+
+    <style name="RadioButtonBND" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/main_blue</item>
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+    </style>
+
+    <style name="RadioButtonAndroidH5" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/main_blue</item>
+        <item name="android:textAppearance">@style/InterMedium.HeaderH5InterMedium14</item>
+    </style>
+
+    <style name="CheckBoxBND" parent="Theme.AppCompat.Light">
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="android:paddingStart">7dp</item>
+    </style>
+
+    <style name="SwitchBND" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="switchPadding">8dp</item>
+    </style>
+
+
+    <style name="roundImageViewItemSubCatalog">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+    </style>
+
+
+    <style name="SwitchBNDBold" parent="SwitchBND">
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="android:textStyle">bold</item>
+        <item name="switchPadding">8dp</item>
+    </style>
+
+    <!-- Round Image -->
+    <style name="roundImageViewSingleProdSellerFragment">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">38dp</item>
+    </style>
+
+    <style name="roundImageViewSingleProdSeller">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">29dp</item>
+    </style>
+
+    <style name="roundImageViewItemCatalog">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="roundImageViewStoreLogo">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">36dp</item>
+    </style>
+
+    <style name="roundImageViewProfileHeader">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="roundImageViewCornerSize8">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="roundImageViewWriteReviews">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="roundImageViewCornerSize4">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
+    <style name="roundImageViewMyQuestions">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">2dp</item>
+    </style>
+
+    <style name="RatingStars" parent="TextAppearance.AppCompat">
+        <item name="android:textAppearance">@style/InterRegular.Body2InterRegular14</item>
+        <item name="android:textColor">@color/rating_votes</item>
+    </style>
+
+    <!-- PopupWindowAnimation -->
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_in_animation</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <!-- Rating Bar -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_blue_1</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="ChipShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">4dp</item>
+    </style>
+
+</resources>
+

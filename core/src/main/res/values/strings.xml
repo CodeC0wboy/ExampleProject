@@ -1,0 +1,299 @@
+<resources>
+    <string name="app_name" translatable="false">Buendeal</string>
+
+    <string name="votes" translatable="false">(%d)</string>
+    <string name="votes_reviews">(%d reviews)</string>
+    <string name="votes_no_brackets" translatable="false">%d</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="product_counter">%1$d of %2$d</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="continue_">Continue</string>
+    <string name="en" translatable="false">EN</string>
+    <string name="es" translatable="false">ES</string>
+    <string name="messages">Messages</string>
+    <string name="message">Message</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="sing_up">Sing up</string>
+    <string name="sing_in">Sing in</string>
+    <string name="home">Home</string>
+    <string name="catalog">Catalog</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="wishlists">Wishlists</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="sort_by">Sort by</string>
+    <string name="filters">Filters</string>
+    <string name="already_have_an_account">I already have an account</string>
+    <string name="have_an_account_sign_in">Have an account? Sign in</string>
+    <string name="dont_have_an_account_sign_up">Don’t have an account? Sign up</string>
+    <string name="private_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="marketplace_feature">Marketplace feature</string>
+    <string name="sing_up_with_google">Sign up with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="see_all">See All</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="recently_viewed">Recently viewed</string>
+    <string name="continue_as_a_guest">Continue as a guest</string>
+    <string name="create_account">Create account</string>
+    <string name="havent_searched">You haven\'t searched for \n anything yet</string>
+    <string name="find_things_you_like">Find things you like</string>
+    <string name="search_in_categories">Search in categories:</string>
+    <string name="email_phone_recover_password">Enter your email or phone number \n to recover your password</string>
+    <string name="restore_password">Restore password</string>
+    <string name="set_password">Set password</string>
+    <string name="set_a_new_password">Set a new password</string>
+    <string name="your_request_accepted">Your request has been accepted</string>
+    <string name="sent_link_recover_your_password">We sent you a link to recover your password</string>
+    <string name="new_psw_successfully_set">New password is successfully set</string>
+    <string name="you_logged_into_your_account">You are logged into your account</string>
+    <string name="compare_all_sellers" translatable="false">Compare all sellers</string>
+    <string name="selected_color">Selected color:</string>
+    <string name="other_sellers_propositions_from" translatable="false">Other sellers propositions from %s</string>
+    <string name="see_all_reviews"><![CDATA[<font color="#486AF3">See all reviews</font> <font color="#4B5356">(%d)</font>]]></string>
+    <string name="all_reviews">All reviews</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="visit_seller_website">Visit seller’s website</string>
+    <string name="reviews">Reviews</string>
+    <string name="quantity_ratings">%s Ratings</string>
+    <string name="board_name_must_not_be_empty">Board name must not be empty</string>
+
+    <string name="under_construction" translatable="false">UNDER CONSTRUCTION</string>
+
+    <string name="unexpected_server_error" translatable="false">Unexpected Server Error</string>
+    <string name="error_unexpected_server_error_" translatable="false">Unexpected server error: %s</string>
+    <string name="error_unexpected_server_error" translatable="false">Unexpected server error</string>
+    <string name="error_unable_to_communicate_to_server" translatable="false">Unable to communicate to server</string>
+    <string name="error_no_internet_connection" translatable="false">No internet connection</string>
+    <string name="unexpected_error">Something went wrong. Please check your Internet connection and try again.</string>
+
+    <string name="splash_title">Easiest way to shop online in Panama</string>
+    <string name="first_walkthrough_title">Risk-free shopping</string>
+    <string name="second_walkthrough_title">Collect favorite items</string>
+    <string name="finish_walkthrough_title">Compare before buy</string>
+    <string name="first_walkthrough_description">Your money is stored in our partner\n bank account until you pick up the\n package. If the item doesn’t match you,\n money will be returned</string>
+    <string name="second_walkthrough_description">Create wishlists and with items or\n searches you like and buy your favorite\n products whenever you can</string>
+    <string name="finish_walkthrough_description">Compare all the characteristics of the\n items you like and buy it only from the\n best sellers</string>
+
+    <string name="sing_up_terms_of_use">By tapping Sign Up you accept the Buendeals\n Terms of Use. Please read the Privacy Policy</string>
+    <string name="sing_in_terms_of_use">By tapping Sign In you accept the Buendeals\n Terms of Use. Please read the Privacy Policy</string>
+
+    <string name="label" translatable="false"><![CDATA[Field Label<font color="#DA1414">*</font>]]></string>
+    <string name="label_email"><![CDATA[Email<font color="#DA1414"> *</font>]]></string>
+    <string name="label_password"><![CDATA[Password<font color="#DA1414"> *</font>]]></string>
+    <string name="label_prod_description"><![CDATA[Product Description<font color="#DA1414"> *</font>]]></string>
+    <string name="label_search">Search</string>
+    <string name="label_first_name">First Name</string>
+    <string name="label_last_name">Last Name</string>
+    <string name="label_display_name">Display Name</string>
+    <string name="label_email_username">Email or Username</string>
+    <string name="label_email_phone">Email or Phone number</string>
+    <string name="label_enter_new_psw">Enter New Password</string>
+    <string name="label_confirm_new_psw">Confirm New Password</string>
+
+    <string name="hint_enter_email">Enter your email</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="hint_prod_description">Tell us about your product</string>
+    <string name="hint_what_are_you_looking_for">What are you looking for</string>
+    <string name="hint_what_are_you_looking_for_">What are you looking for…</string>
+    <string name="hint_input_text_area_write_review">What do you like or don\'t like?</string>
+
+    <string name="add_more_product">Add more products</string>
+
+    <string name="you_didnt_add_any_items">You didn\'t add any items to the comparison</string>
+    <string name="compare_all_the_characteristics">Compare all the characteristics of the items you like and buy it only from the best sellers</string>
+    <string name="go_to_catalog">Go to catalog</string>
+    <string name="comparison_list_title">Comparison lists</string>
+    <string name="my_reviews_title">My reviews</string>
+    <string name="my_orders_title" translatable="false">My orders</string>
+    <string name="total_title">Total</string>
+    <string name="cart_title">Cart</string>
+
+
+    <string name="differences_only">Differences only</string>
+    <string name="headphones_for_all" translatable="false">Headphones For All</string>
+    <string name="seller">Seller</string>
+
+    <string name="compare_products_title">Compare products (%1$d)</string>
+
+    <string name="customer_q_a"><![CDATA[Customer Q&A]]></string>
+    <string name="ask_a_question">Ask a question</string>
+    <string name="customer_qa_empty_text">This product has no questions yet. Be the first!</string>
+    <string name="customer_qa_text">Get specific details about this product from customers who own it</string>
+    <string name="customer_qa_quantity_answers">%d Answers</string>
+    <string name="customer_questions_answers_title"><![CDATA[Customer Questions & Answers]]></string>
+    <string name="helpful">Helpful?</string>
+    <string name="no_d">No (%d)</string>
+    <string name="yes_d">Yes (%d)</string>
+    <string name="by_s"><![CDATA[<font color="#9DAAB6">By</font> <font color="#000000">%s</font>]]></string>
+    <string name="asked_by_s"><![CDATA[<font color="#9DAAB6">Asked by</font> <font color="#000000">%s</font>]]></string>
+    <string name="last_date_s">Last %s</string>
+    <string name="type_your_question">Type your question</string>
+    <string name="type_your_answer">Type your answer</string>
+    <string name="write_your_question">Write your question</string>
+    <string name="submit_question">Submit question</string>
+    <string name="submit_answer">Submit answer</string>
+    <string name="answer_this_question">Answer this question</string>
+    <string name="answer_a_question">Answer a question</string>
+    <string name="best_rated">Best rated</string>
+    <string name="title_write_review_screen">Write A Review</string>
+    <string name="your_overall_rating">Your overall rating</string>
+    <string name="add_images">Add Images</string>
+    <string name="submit_a_review">Submit a review</string>
+    <string name="d_6" translatable="false">%d/6</string>
+    <string name="d_20" translatable="false">%d/20</string>
+    <string name="description">Description</string>
+    <string name="specifications">Specifications</string>
+    <string name="example_description_product" translatable="false">The new AirPods combine intelligent design with breakthrough technology and crystal clear sound.
+        Powered by the new Apple H1 headphone chip, AirPods now feature hands-free access to Siri using just your voice. And up to 3 hours of talk
+        time on a single charge. \n\n
+        Automatically on, automatically connected \n
+        Easy setup for all your apple devices Quick access to Siri by saying \"Hey Siri\" \n
+        Double-tap to play or skip forward \n
+        Charges quickly in the case \n
+        Case can be charged using the lightning connector \n
+        Rich, high-quality audio and voice \n
+    </string>
+    <string name="products">Products</string>
+<!--    <string name="products_">Products</string>-->
+    <string name="info">info</string>
+    <string name="d_days_on_buendeal">%d days on Buendeal</string>
+    <string name="your_cart_is_empty" translatable="false">Your cart is empty</string>
+    <string name="your_wishlist_is_empty">Your wishlist is empty</string>
+    <string name="but_it_s_never_too_late_to_fix_it" translatable="false">But it\'s never too late to fix it</string>
+    <string name="go_shopping" translatable="false">Go shopping</string>
+
+
+    <plurals name="order_item_plurals">
+        <item quantity="zero">%d item</item>
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <string name="theme_selection_title">Theme selection</string>
+    <string name="gender_title">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birth_date_title">Date of birth</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="verify_phone_number">Verify phone number</string>
+    <string name="set_new_password">Set new password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="settings">Settings</string>
+    <string name="promotions">Promotions</string>
+    <string name="contacts">Contacts</string>
+    <string name="about">About</string>
+    <string name="no_application_support_action" translatable="false">There is no application that support this action</string>
+    <string name="my_questions">My questions</string>
+    <string name="questions">Questions</string>
+    <string name="compares">Compares</string>
+    <string name="popup_answer_question_text" translatable="false">Can the wireless case still be charged with a wire?</string>
+    <string name="viewed_items">Viewed items</string>
+    <string name="log_out">Log out</string>
+    <string name="contact_support">Contact support</string>
+    <string name="submit">Submit</string>
+    <string name="your_email">Your email</string>
+    <string name="help_center">Help center</string>
+    <string name="summary_checkout_title" translatable="false">Proceed to checkout</string>
+
+    <string-array name="number_of_answers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="your_city" translatable="false">Your city</string>
+    <string name="contact_information_title" translatable="false">Contact information</string>
+    <string name="was_it_helpful">Was it helpful?</string>
+    <string name="ship_item" translatable="false">Ship Item</string>
+    <string name="pick_up_in_store" translatable="false">Pick Up in store</string>
+    <string name="free" translatable="false">Free</string>
+    <string name="shipping_address" translatable="false">Shipping address</string>
+    <string name="change">Change</string>
+    <string name="payment_method" translatable="false">Payment Method</string>
+    <string name="i_m_the_recipient" translatable="false">I\'m the recipient</string>
+    <string name="the_recipient_is_another_person" translatable="false">The recipient is another person</string>
+    <string name="total_order_amount" translatable="false">Total order amount</string>
+    <string name="order_total" translatable="false">Order total</string>
+    <string name="shipping" translatable="false">Shipping</string>
+    <string name="grand_total" translatable="false">Grand total</string>
+    <string name="payment_by_bank_transfer" translatable="false">Payment by bank transfer</string>
+    <string name="select_payment_method_title" translatable="false">Select payment method title</string>
+    <string name="visa_mastercard" translatable="false">Visa/Mastercard</string>
+    <string name="card_number" translatable="false">Card number<font color='red'>*</font></string>
+    <string name="expiration" translatable="false">Expiration<font color='red'>*</font></string>
+    <string name="secuity_code" translatable="false">Secuity Code<font color='red'>*</font></string>
+    <string name="your_instructions_to_make_the_payment_via_bank_transfer" translatable="false">Your instructions to make the payment via Bank transfer:</string>
+    <string name="amount">Amount</string>
+    <string name="name_of_the_account_holder" translatable="false">Name of the account holder</string>
+    <string name="include_details" translatable="false">Please include this details</string>
+    <string name="bank_name" translatable="false">Bank name</string>
+    <string name="thank_you_your_order_is_accepted" translatable="false">Thank you! Your order is accepted!</string>
+    <string name="we_will_contact_you_via_notifications_or_phone" translatable="false">We will contact you via notifications or phone</string>
+    <string name="continue_shopping" translatable="false">Continue shopping</string>
+    <string name="my_orders" translatable="false">My orders</string>
+    <string name="payment_instructions" translatable="false">Payment instructions</string>
+    <string name="empty_reviews_block_text">This product has no reviews yet. Be the first!</string>
+    <string name="first_risk_free_shopping_single_product" translatable="false">Your money is stored in our partner bank account until you pick up the package</string>
+    <string name="second_risk_free_shopping_single_product" translatable="false">If the item doesn’t match or you cancel the order, the money will be returned</string>
+    <string name="learn_more">Learn more</string>
+    <string name="boards">Boards</string>
+    <string name="find_item_and_add_to_favorites">Find the item you like and add \n it to your favorites</string>
+    <string name="havent_created_boards">You haven\'t created any \n boards yet</string>
+    <string name="create_board_add_items_you_like">Create a new board and add \n items you like there</string>
+    <string name="add_more_products">Add more products</string>
+    <string name="delete_this_list">Delete this list</string>
+    <string name="add_products_to_the_wishlist">Add products to the wishlist</string>
+    <string name="add_to_the_wishlist">Add to the wishlist</string>
+    <string name="add_to_compare_list">Add to compare list</string>
+    <string name="remove_all">Remove all</string>
+    <string name="remove_from_cart" translatable="false">Remove from cart</string>
+    <string name="edit_board">Edit board</string>
+    <string name="delete_board">Delete board</string>
+    <string name="add_to_board">Add to board</string>
+    <string name="go_to_board">Go to board</string>
+    <string name="product_added_to_your_nwishlist">Product added to your \nwishlist</string>
+    <string name="product_added_to_the_board">Product added to the \n\"%s\" board</string>
+    <string name="add_new_board">Add new board</string>
+    <string name="board_name">Board name</string>
+    <string name="create_board">Create board</string>
+    <string name="relevance">Relevance</string>
+    <string name="lowest_price">Lowest price</string>
+    <string name="highest_price">Highest price</string>
+    <string name="most_popular">Most popular</string>
+    <string name="discounts">Discounts</string>
+    <string name="newest">Newest</string>
+    <string name="new_">New</string>
+    <string name="popular">Popular</string>
+    <string name="add_date">Add date</string>
+    <string name="rating">Rating</string>
+    <string name="answer">Answer</string>
+    <string name="your_products">Your products</string>
+    <string name="you_not_add_any_products_yet">You haven\'t add any products yet</string>
+    <string name="start_selling_and_earning_with_us">Start selling and earning with us</string>
+    <string name="promote">Promote</string>
+    <string name="edit_product">Edit product</string>
+    <string name="delete_product">Delete product</string>
+    <string name="search_products">Search products</string>
+    <string name="add_products">Add products</string>
+    <string name="esp">Esp.</string>
+    <string name="eng">Eng.</string>
+    <string name="keyword">keyword</string>
+
+    <string name="review_date">%1$tb %1$td, %1$tY</string>
+    <string name="featured_products">Featured products</string>
+    <string name="how_you_can_increase_your_sales_with_us">How you can increase your sales with us</string>
+    <string name="hide">Hide</string>
+    <string name="help_item_subtitle1">Start adding your products</string>
+    <string name="help_item_description1">Thousands of products with the best price from verified sellers in one place</string>
+    <string name="explore_your_competitors">Explore your competitors</string>
+    <string name="advertise_with_us">Advertise with us</string>
+
+</resources>

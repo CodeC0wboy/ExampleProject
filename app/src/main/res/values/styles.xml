@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PopupWindowAnimation -->
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_in_animation</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="PopupWindowAnimationWishlist">
+        <item name="android:windowEnterAnimation">@anim/wishlist_popup_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/wishlist_popup_anim_out</item>
+    </style>
+</resources>

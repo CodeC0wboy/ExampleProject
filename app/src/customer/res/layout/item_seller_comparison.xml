@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/sellerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seller"
+        android:textColor="@color/black"
+        android:background="@color/light_gray_2"
+        android:paddingTop="@dimen/margin_default_input"
+        android:paddingBottom="@dimen/margin_default_input"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sellerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintTop_toBottomOf="@+id/sellerTitle">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/comparison_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/firstSellerIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewItemCatalog"
+            tools:background="@color/green" />
+
+        <TextView
+            android:id="@+id/firstSellerTv"
+            style="@style/InterRegular.CaptureInterRegular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="@string/headphones_for_all"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/firstSellerIv"
+            app:layout_constraintTop_toTopOf="@+id/firstSellerIv" />
+
+        <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+            android:id="@+id/firstSellerRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/firstSellerTv"
+            app:layout_constraintTop_toBottomOf="@+id/firstSellerTv" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/secondSellerIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewItemCatalog"
+            tools:background="@color/green" />
+
+        <TextView
+            android:id="@+id/secondSellerTv"
+            style="@style/InterRegular.CaptureInterRegular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="@string/headphones_for_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/secondSellerIv"
+            app:layout_constraintTop_toTopOf="@+id/secondSellerIv" />
+
+        <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+            android:id="@+id/secondSellerRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/secondSellerTv"
+            app:layout_constraintTop_toBottomOf="@+id/secondSellerTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

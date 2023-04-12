@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/colorControlHighlight_blue4">
+
+        <TextView
+            android:id="@+id/questionBlockTitle"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:text="@string/customer_q_a"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_default_input"
+            android:src="@drawable/ic_chevron_right_main_blue"
+            app:layout_constraintTop_toTopOf="@+id/questionBlockTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/questionBlockTitle"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/questionBlockDividerTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginEnd="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/separator_category_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionBlockTitle" />
+
+        <TextView
+            android:id="@+id/questionBlockText"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/customer_qa_text"
+            android:textColor="@color/dark_gray_1"
+            app:layout_constraintEnd_toEndOf="@+id/questionBlockDividerTop"
+            app:layout_constraintStart_toStartOf="@+id/questionBlockDividerTop"
+            app:layout_constraintTop_toBottomOf="@+id/questionBlockDividerTop" />
+
+        <TextView
+            android:id="@+id/questionBlockQuantityAnswers"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_default_input"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:text="@string/customer_qa_quantity_answers"
+            android:textColor="@color/typography_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionBlockText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

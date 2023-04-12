@@ -1,0 +1,66 @@
+package com.dnc.buendeal.core.core.data.response.product
+
+import com.dnc.buendeal.core.core.data.response.MediaPreviews
+import com.google.gson.annotations.SerializedName
+
+data class IncludedProductAttributesResponse(
+    @SerializedName("media.id") val mediaId: Int?,
+    @SerializedName("media.domain") val mediaDomain: String?,
+    @SerializedName("media.label") val mediLabel: String?,
+    @SerializedName("media.languageid") val mediaLanguageid: String?,
+    @SerializedName("media.mimetype") val mediaMimetype: String?,
+    @SerializedName("media.type") val type: String?,
+    @SerializedName("media.preview") val mediaPreview: String?,
+    @SerializedName("media.previews") val mediaPreviews: MediaPreviews?,
+    @SerializedName("media.url") val mediaUrl: String?,
+    @SerializedName("media.status") val mediaStatus: Int?,
+
+    @SerializedName("price.id") val priceID: String?,
+    @SerializedName("price.type") val priceType: String?,
+    @SerializedName("price.currencyid") val priceCurrencyid: String?,
+    @SerializedName("price.domain") val priceDomain: String?,
+    @SerializedName("price.quantity") val priceQuantity: Long?,
+    @SerializedName("price.value") val priceValue: String?,
+    @SerializedName("price.costs") val priceCosts: String?,
+    @SerializedName("price.rebate") val priceRebate: String?,
+    @SerializedName("price.taxvalue") val priceTaxvalue: String?,
+    @SerializedName("price.taxrates") val priceTaxrates: ProductPriceTaxRatesResponse?,
+    @SerializedName("price.taxrate") val priceTaxrate: String?,
+    @SerializedName("price.taxflag") val priceTaxflag: Boolean?,
+    @SerializedName("price.status") val priceStatus: Long?,
+    @SerializedName("price.label") val priceLabel: String?,
+
+    @SerializedName("attribute.id") val attributeId: String?,
+    @SerializedName("attribute.domain") val attributeDomain: String?,
+    @SerializedName("attribute.type") val attributeType: String?,
+    @SerializedName("attribute.code") val attributeCode: String?,
+    @SerializedName("attribute.label") val attributeLabel: String?,
+    @SerializedName("attribute.status") val attributeStatus: Long?,
+    @SerializedName("attribute.position") val attributePosition: Long?,
+
+    @SerializedName("text.id") val textId: String?,
+    @SerializedName("text.languageid") val textLanguageId: String?,
+    @SerializedName("text.type") val textType: String?,
+    @SerializedName("text.label") val textLabel: String?,
+    @SerializedName("text.domain") val textDomain: String?,
+    @SerializedName("text.content") val textContent: String?,
+    @SerializedName("text.status") val textStatus: Long?,
+
+    @SerializedName("product.id") val productID: String?,
+    @SerializedName("product.url") val productURL: String?,
+    @SerializedName("product.type") val productType: String?,
+    @SerializedName("product.code") val productCode: String?,
+    @SerializedName("product.label") val productLabel: String?,
+    @SerializedName("product.status") val productStatus: Long?,
+    @SerializedName("product.dataset") val productDataset: String?,
+    @SerializedName("product.datestart") val productDatestart: Any? = null,
+    @SerializedName("product.dateend") val productDateend: Any? = null,
+    @SerializedName("product.config") val productConfig: List<Any?>,
+    @SerializedName("product.scale") val productScale: Long?,
+    @SerializedName("product.target") val productTarget: String?,
+    @SerializedName("product.ctime") val productCtime: String?,
+    @SerializedName("product.rating") val productRating: String?,
+    @SerializedName("product.ratings") val productRatings: Int?,
+    @SerializedName("product.featured_at") val productFeaturedAt: String?,
+    @SerializedName("product.siteid") val productSiteId: String?
+)

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/colorControlHighlight_blue4">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sellerNameImage"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewSingleProdSeller"
+            tools:background="@color/green" />
+
+        <TextView
+            android:id="@+id/sellerNameText"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintStart_toEndOf="@+id/sellerNameImage"
+            app:layout_constraintTop_toTopOf="@+id/sellerNameImage"
+            tools:text="Headphones For All" />
+
+        <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+            android:id="@+id/viewRatingStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/sellerNameImage"
+            app:layout_constraintTop_toBottomOf="@+id/sellerNameText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

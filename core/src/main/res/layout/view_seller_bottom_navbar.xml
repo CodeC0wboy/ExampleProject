@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/gradient_navbar"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_home_def_navbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvHome"
+        app:layout_constraintEnd_toStartOf="@+id/ivCatalog"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvHome"
+        style="@style/InterMedium.OverlineInterMedium10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivHome"
+        app:layout_constraintStart_toStartOf="@+id/ivHome"
+        app:layout_constraintTop_toBottomOf="@+id/ivHome" />
+
+    <TextView
+        android:id="@+id/dotHome"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_notification_dot"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ivHome"
+        app:layout_constraintEnd_toEndOf="@+id/ivHome"
+        app:layout_constraintStart_toEndOf="@id/ivHome"
+        app:layout_constraintTop_toTopOf="@id/ivHome" />
+
+
+    <ImageView
+        android:id="@+id/ivCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_elements_def_navbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalog"
+        app:layout_constraintEnd_toStartOf="@+id/ivProducts"
+        app:layout_constraintStart_toEndOf="@+id/ivHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvCatalog"
+        style="@style/InterMedium.OverlineInterMedium10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catalog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivCatalog"
+        app:layout_constraintStart_toStartOf="@+id/ivCatalog"
+        app:layout_constraintTop_toBottomOf="@+id/ivCatalog" />
+
+    <TextView
+        android:id="@+id/dotCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_notification_dot"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ivCatalog"
+        app:layout_constraintEnd_toEndOf="@+id/ivCatalog"
+        app:layout_constraintStart_toEndOf="@id/ivCatalog"
+        app:layout_constraintTop_toTopOf="@id/ivCatalog" />
+
+           <ImageView
+               android:id="@+id/ivProducts"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="5dp"
+               android:src="@drawable/ic_shopping_bag"
+               app:layout_constraintBottom_toTopOf="@+id/tvProducts"
+               app:layout_constraintEnd_toStartOf="@+id/ivWishlist"
+               app:layout_constraintStart_toEndOf="@+id/ivCatalog"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_chainStyle="packed" />
+
+           <TextView
+               android:id="@+id/tvProducts"
+               style="@style/InterMedium.OverlineInterMedium10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/products"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="@+id/ivProducts"
+               app:layout_constraintStart_toStartOf="@+id/ivProducts"
+               app:layout_constraintTop_toBottomOf="@+id/ivProducts" />
+
+           <TextView
+               android:id="@+id/dotProducts"
+               android:layout_width="wrap_content"
+               android:layout_height="8dp"
+               android:background="@drawable/bg_notification_dot"
+               android:gravity="center"
+               android:text=""
+               android:textColor="@color/white"
+               android:textSize="8sp"
+               android:visibility="gone"
+               app:layout_constraintBottom_toTopOf="@id/ivProducts"
+               app:layout_constraintEnd_toEndOf="@+id/ivProducts"
+               app:layout_constraintStart_toEndOf="@id/ivProducts"
+               app:layout_constraintTop_toTopOf="@id/ivProducts" />
+
+
+    <ImageView
+        android:id="@+id/ivWishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_heart_def_navbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvWishlist"
+        app:layout_constraintEnd_toStartOf="@+id/ivCart"
+        app:layout_constraintStart_toEndOf="@+id/ivProducts"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvWishlist"
+        style="@style/InterMedium.OverlineInterMedium10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wishlist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivWishlist"
+        app:layout_constraintStart_toStartOf="@+id/ivWishlist"
+        app:layout_constraintTop_toBottomOf="@+id/ivWishlist" />
+
+    <TextView
+        android:id="@+id/dotWishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_notification_dot"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ivWishlist"
+        app:layout_constraintEnd_toEndOf="@+id/ivWishlist"
+        app:layout_constraintStart_toEndOf="@id/ivWishlist"
+        app:layout_constraintTop_toTopOf="@id/ivWishlist" />
+
+    <ImageView
+        android:id="@+id/ivCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_shopping_cart_btn_unchecked"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvCart"
+        app:layout_constraintEnd_toStartOf="@+id/ivProfile"
+        app:layout_constraintStart_toEndOf="@+id/ivWishlist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvCart"
+        style="@style/InterMedium.OverlineInterMedium10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivCart"
+        app:layout_constraintStart_toStartOf="@+id/ivCart"
+        app:layout_constraintTop_toBottomOf="@+id/ivCart" />
+
+    <TextView
+        android:id="@+id/dotCart"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_notification_dot"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ivCart"
+        app:layout_constraintEnd_toEndOf="@+id/ivCart"
+        app:layout_constraintStart_toEndOf="@id/ivCart"
+        app:layout_constraintTop_toTopOf="@id/ivCart" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_user_def_navbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivCart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvProfile"
+        style="@style/InterMedium.OverlineInterMedium10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfile"
+        app:layout_constraintStart_toStartOf="@+id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+    <TextView
+        android:id="@+id/dotProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/bg_notification_dot"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ivProfile"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfile"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toTopOf="@id/ivProfile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

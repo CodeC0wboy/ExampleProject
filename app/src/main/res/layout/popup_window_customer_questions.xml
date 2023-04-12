@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/questionsPopupTitle"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="18dp"
+        android:text="@string/ask_a_question"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/questionsPopupCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintBottom_toBottomOf="@+id/questionsPopupTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionsPopupTitle" />
+
+    <ImageView
+        android:id="@+id/questionsPopupDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:src="@drawable/separator_category_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsPopupTitle" />
+
+    <TextView
+        android:id="@+id/questionsAnswerText"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsPopupDivider"
+        tools:text="Can the wireless case still be charged with a wire?" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+        android:id="@+id/questionsPopupTextAreaInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsAnswerText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/questionsPopupBtnSubmit"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/margin_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsPopupTextAreaInputLayout"
+        tools:text="@string/submit_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

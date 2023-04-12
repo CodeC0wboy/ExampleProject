@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_information_title"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="@+id/titleTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTv" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/radioGroupContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@color/checkout_radiogroup_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:theme="@style/RadioButtonAndroidH5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/shipItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ship_item"
+                    android:checked="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/pickUpInStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_up_in_store"
+                    app:layout_constraintStart_toStartOf="@+id/shipItem"
+                    app:layout_constraintTop_toBottomOf="@+id/shipItem" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/freeTv"
+                style="@style/InterRegular.Body2InterRegular14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginBottom="14dp"
+                android:text="@string/free"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/addressTv"
+                app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+
+            <TextView
+                android:id="@+id/addressTv"
+                style="@style/InterRegular.Body2InterRegular14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_default_input"
+                android:layout_marginBottom="@dimen/margin_default_input"
+                android:text="Av. Justo Arosemena y Ecuador, Ed. Arcia, Of. 305, Panamá"
+                android:textColor="@color/typography_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cityTil"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium_x1_5"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@drawable/text_input_layout_city_corners"
+            android:hint="@string/your_city"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:endIconDrawable="@drawable/ic_chevron_right"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupContainer"
+            app:startIconDrawable="@drawable/ic_pin"
+            app:startIconTint="@color/main_blue">
+
+            <com.dnc.buendeal.core.core.ui.view.DisabledTextInputEditText
+                android:id="@+id/cityEt"
+                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                tools:text="Panama city" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownNeighbourhood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginEnd="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityTil"
+            inputTxtLayout:hint="Neighbourhood" />
+
+
+        <include
+            android:id="@+id/userData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/user_data_layout"
+            android:layout_marginTop="@dimen/margin_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dropdownNeighbourhood" />
+
+
+        <Button
+            android:id="@+id/continueBtn"
+            style="@style/ContainedBtnGeneralLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@string/continue_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userData"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/sign_up_success_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/InterMedium.HeaderH3InterMedium20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/congratulations"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_big"
+        android:text="@string/sign_up_success_description"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/questionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:background="@drawable/sign_up_questions_background_corners"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+
+        <TextView
+            android:id="@+id/howToAddProducts"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_add_products"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/howToAddProductsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_34"
+            android:layout_marginEnd="@dimen/margin_34"
+            android:background="@color/light_blue_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howToAddProducts" />
+
+
+        <TextView
+            android:id="@+id/howWillIGetPaid"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/when_and_how_will_i_get_paid"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howToAddProductsDivider"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/howWillIGetPaidDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_34"
+            android:layout_marginEnd="@dimen/margin_34"
+            android:background="@color/light_blue_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howWillIGetPaid" />
+
+
+        <TextView
+            android:id="@+id/howCanIDeliverMyProducts"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/how_can_i_deliver_my_products"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howWillIGetPaidDivider"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/howCanIDeliverMyProductsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_34"
+            android:layout_marginEnd="@dimen/margin_34"
+            android:background="@color/light_blue_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howCanIDeliverMyProducts" />
+
+
+        <TextView
+            android:id="@+id/aboutTheShippingRates"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/about_the_shipping_rates"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howCanIDeliverMyProductsDivider"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/aboutTheShippingRatesDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_34"
+            android:layout_marginEnd="@dimen/margin_34"
+            android:background="@color/light_blue_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutTheShippingRates" />
+
+
+        <TextView
+            android:id="@+id/howToTrackOrders"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_default_input"
+            android:text="@string/how_to_track_orders"
+            android:textColor="@color/main_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutTheShippingRatesDivider"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/reviewsRectBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rating_rect_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewsRatingGrade"
+        style="@style/InterMedium.HeaderH2InterMedium24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rating_circle_bg"
+        android:paddingVertical="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintBottom_toTopOf="@+id/quantityRatings"
+        app:layout_constraintEnd_toEndOf="@+id/reviewsRectBg"
+        app:layout_constraintStart_toStartOf="@+id/reviewsRectBg"
+        app:layout_constraintTop_toTopOf="@+id/reviewsRectBg"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="4.8" />
+
+    <TextView
+        android:id="@+id/quantityRatings"
+        style="@style/InterRegular.Body1InterRegular16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/quantity_ratings"
+        android:textColor="@color/dark_gray_2"
+        app:layout_constraintBottom_toBottomOf="@+id/reviewsRectBg"
+        app:layout_constraintEnd_toEndOf="@+id/reviewsRectBg"
+        app:layout_constraintStart_toStartOf="@+id/reviewsRectBg"
+        app:layout_constraintTop_toBottomOf="@+id/reviewsRatingGrade" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/reviewRating5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        app:layout_constraintStart_toEndOf="@+id/reviewsRectBg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/reviewRating4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/reviewRating5"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRating5" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/reviewRating3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/reviewRating4"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRating4" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/reviewRating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/reviewRating3"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRating3" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/reviewRating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/reviewRating2"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRating2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

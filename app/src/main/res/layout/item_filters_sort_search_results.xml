@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_big"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFilters"
+            style="@style/OutLinedBtnGeneralLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:text="@string/filters"
+            android:textColor="@color/dark_gray_1"
+            app:icon="@drawable/ic_sliders_horiz"
+            app:iconGravity="textStart"
+            app:iconSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dropdownMenuCategoryFilter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownMenuCategoryFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnFilters"
+            app:layout_constraintTop_toTopOf="parent"
+            inputTxtLayout:hint="All categories" />
+
+        <com.dnc.buendeal.core.core.ui.view.DropdownMenuTextInputLayout
+            android:id="@+id/dropdownMenuSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dropdownMenuCategoryFilter"
+            app:layout_constraintTop_toTopOf="parent"
+            inputTxtLayout:hint="Lowest price"
+            inputTxtLayout:label="@string/sort_by" />
+
+    </LinearLayout>
+</HorizontalScrollView>

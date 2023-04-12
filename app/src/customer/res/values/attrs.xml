@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="inputTxtLayout">
+        <attr name="label" format="string" />
+        <attr name="boxStrokeColor" format="color" />
+        <attr name="hint" format="string" />
+        <attr name="modePassword" format="boolean" />
+        <attr name="searchIcon" format="reference" />
+        <attr name="focusableETSearch" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="bottomBtn">
+        <attr name="btnText" format="string" />
+        <attr name="sortHint" format="string" />
+    </declare-styleable>
+</resources>

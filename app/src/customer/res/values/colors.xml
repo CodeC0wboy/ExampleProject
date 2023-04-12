@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_blue">#486AF3</color>
+    <color name="blue_2">#4484FF</color>
+    <color name="blue_3">#007AFF</color>
+    <color name="light_blue_1">#E1EBFB</color>
+    <color name="light_blue_2">#EDF3FC</color>
+    <color name="light_blue_3">#EEF1F5</color>
+    <color name="light_blue_4">#CFD8FD</color>
+    <color name="dark_gray_1">#4B5356</color>
+    <color name="dark_gray_2">#9DAAB6</color>
+    <color name="dark_gray_3">#E2E7EB</color>
+    <color name="dark_gray_4">#828282</color>
+    <color name="dark_gray_5">#889194</color>
+    <color name="light_gray_1">#F1F2F2</color>
+    <color name="light_gray_2">#F8F9F9</color>
+    <color name="light_gray_3">#FDFDFD</color>
+    <color name="orange">#FF884B</color>
+    <color name="red">#EA3535</color>
+    <color name="light_red">#EB5757</color>
+    <color name="green">#34A853</color>
+    <color name="violet">#943ADB</color>
+    <color name="yellow">#FFD600</color>
+    <color name="rose_white">#FFF8F8</color>
+    <color name="comparison_divider">#EEF1F5</color>
+
+    <color name="checkout_radiogroup_background">#FAFBFB</color>
+    <color name="language_active_color">#2F80ED</color>
+    <color name="typography_light">#879194</color>
+    <color name="divider">#F1F1F1</color>
+    <color name="bank_data_divider">#E5E5E5</color>
+    <color name="rating_votes">#61696B</color>
+    <color name="description_text">#4B4B4B</color>
+    <color name="old_price">#C1C1C1</color>
+    <color name="language_inactive_color">#C1C1C1</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sellerProductCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sellerProductMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:src="@drawable/comparison_more_btn_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sellerProductImage"
+            android:layout_width="80dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewCornerSize8"
+            tools:background="@color/green" />
+
+        <TextView
+            android:id="@+id/sellerProductTitle"
+            style="@style/InterRegular.CaptureInterRegular13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:lines="3"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/sellerProductMenu"
+            app:layout_constraintStart_toEndOf="@+id/sellerProductImage"
+            app:layout_constraintTop_toTopOf="@+id/sellerProductImage"
+            tools:text="Dell Inspiron 13 7000, i7370-5725S 13.3'' FHD (1920 x 1080)" />
+
+        <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+            android:id="@+id/sellerProductRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="@+id/sellerProductImage"
+            app:layout_constraintStart_toEndOf="@+id/sellerProductImage" />
+
+        <TextView
+            android:id="@+id/sellerProductPrice"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/sellerProductImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="$830.00" />
+
+        <View
+            android:id="@+id/sellerProductDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/comparison_divider"
+            app:layout_constraintEnd_toEndOf="@+id/sellerProductPrice"
+            app:layout_constraintStart_toStartOf="@+id/sellerProductImage"
+            app:layout_constraintTop_toBottomOf="@+id/sellerProductRating" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sellerProductPromoteBtn"
+            style="@style/OutLinedBtnGeneralSmall"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/promote"
+            android:textAppearance="@style/InterRegular.Body2InterRegular14"
+            app:layout_constraintEnd_toEndOf="@+id/sellerProductDivider"
+            app:layout_constraintStart_toStartOf="@+id/sellerProductDivider"
+            app:layout_constraintTop_toBottomOf="@+id/sellerProductDivider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

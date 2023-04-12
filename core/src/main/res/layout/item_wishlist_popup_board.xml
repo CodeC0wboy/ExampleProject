@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupBoardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/bg_popup_board_item">
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/InterRegular.CaptureInterRegular12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Headphones" />
+
+    <TextView
+        android:id="@+id/productCountTv"
+        style="@style/InterRegular.OverlineInterRegular10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:textColor="@color/dark_gray_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        tools:text="4 Products" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pairRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:layout_marginBottom="@dimen/margin_medium_x1_5"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productCountTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

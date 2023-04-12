@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/reviewsProductPhoto"
+        android:layout_width="68dp"
+        android:layout_height="77dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/product_image"
+        app:shapeAppearanceOverlay="@style/roundImageViewCornerSize4" />
+
+    <TextView
+        android:id="@+id/reviewsProductTitle"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/dark_gray_1"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/reviewsProductPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Apple Watch Series 3 GPS 42mm  Sport Band Aluminum Case" />
+
+    <com.dnc.buendeal.core.core.ui.view.DiagonalStrikeTextView
+        android:id="@+id/reviewsOldPrice"
+        style="@style/InterRegular.CaptureInterRegular13"
+        android:textColor="@color/old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="$172.00"
+        app:layout_constraintStart_toStartOf="@+id/reviewsProductTitle"
+        app:layout_constraintTop_toBottomOf="@+id/reviewsProductTitle" />
+
+    <TextView
+        android:id="@+id/reviewsPrice"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_big"
+        tools:text="$152.00"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/reviewsOldPrice"
+        app:layout_constraintTop_toBottomOf="@+id/reviewsOldPrice" />
+
+    <ImageView
+        android:id="@+id/reviewsBtnCart"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/selector_shopping_card_btn"
+        android:theme="@style/colorControlHighlight_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/reviewsPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reviewsOldPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/step"
+        style="@style/InterMedium.LabelsInterMedium14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/step_1_of_2"
+        android:textColor="@color/dark_gray_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainInfo"
+        style="@style/InterMedium.HeaderH3InterMedium20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:text="@string/main_info"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step" />
+
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/InterRegular.Body1InterRegular16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:text="@string/main_info_description"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainInfo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:background="@drawable/dotted_border_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarPhoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundImageViewStoreLogo"
+            android:background="@drawable/ic_subtract" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/InterMedium.HeaderH5InterMedium14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:text="@string/set_store_avatar"
+            android:textColor="@color/main_blue"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/avatarPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/InterRegular.CaptureInterRegular12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginEnd="44dp"
+            android:layout_marginTop="@dimen/margin_small_0_5"
+            android:text="@string/avatar_description"
+            android:textColor="@color/dark_gray_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/avatarPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/storeNameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        app:layout_constraintTop_toBottomOf="@+id/avatarContainer"
+        inputTxtLayout:label="@string/store_name" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextAreaTextInputLayout
+        android:id="@+id/storeDescriptionTil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storeNameTil"
+        inputTxtLayout:label="@string/store_description" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:text="@string/continue_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storeDescriptionTil" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

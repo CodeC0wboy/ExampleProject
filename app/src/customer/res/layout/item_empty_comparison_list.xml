@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_image_view"
+        android:src="@drawable/ic_empty_comparison_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/margin_huge"
+        android:layout_marginEnd="@dimen/margin_huge"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/you_didnt_add_any_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconIv" />
+
+    <TextView
+        android:id="@+id/subtitleTv"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:textColor="@color/dark_gray_1"
+        android:text="@string/compare_all_the_characteristics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <Button
+        android:id="@+id/buttonCreateAcc"
+        style="@style/ContainedBtnGeneralLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="74dp"
+        android:paddingEnd="74dp"
+        android:layout_marginBottom="171dp"
+        android:text="@string/go_to_catalog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

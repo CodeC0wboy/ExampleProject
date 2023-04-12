@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/infoTextContacts"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/infoContactsEmail"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/main_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoTextContacts"
+            tools:text="headphones-for-all.pa" />
+
+        <TextView
+            android:id="@+id/infoContactsPhone"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:paddingVertical="4dp"
+            android:textColor="@color/main_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoContactsEmail"
+            tools:text="+507 836-5729" />
+
+        <TextView
+            android:id="@+id/infoContactsAddress"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/rating_votes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoContactsPhone"
+            tools:text="Vanessa Anguizola PTY53440 7270 NW 35TH TER MIAMI, FL 33122-1352 United States" />
+
+        <TextView
+            android:id="@+id/infoTextAbout"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/about"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoContactsAddress" />
+
+        <TextView
+            android:id="@+id/infoDescription"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/rating_votes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoTextAbout"
+            tools:text="We are Tech Experts and we help you to choose and buy a computer, laptop, digital and any home, office or cottage appliance
+With the development of technology, headphones have become an important element of human life. At the end of the 19th century, at the dawn of their existence, they were used to work in telephone exchanges. Later they began to be used in the military sphere." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

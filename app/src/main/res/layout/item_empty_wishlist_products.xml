@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/emptyWishlistProductsIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_empty_wishlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleEmptyProductsWishlist"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_wishlist_is_empty"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/emptyWishlistProductsIM"
+        app:layout_constraintStart_toStartOf="@+id/emptyWishlistProductsIM"
+        app:layout_constraintTop_toBottomOf="@+id/emptyWishlistProductsIM" />
+
+    <TextView
+        android:id="@+id/subtitleEmptyProductsWishlist"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/find_item_and_add_to_favorites"
+        android:textColor="@color/dark_gray_4"
+        app:layout_constraintEnd_toEndOf="@+id/titleEmptyProductsWishlist"
+        app:layout_constraintStart_toStartOf="@+id/titleEmptyProductsWishlist"
+        app:layout_constraintTop_toBottomOf="@+id/titleEmptyProductsWishlist" />
+</androidx.constraintlayout.widget.ConstraintLayout>

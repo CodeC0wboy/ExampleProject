@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/singleProductViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="360:324"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/singleProductCounter"
+        style="@style/InterRegular.CaptureInterRegular12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:padding="@dimen/padding_small"
+        tools:text="1 of 9"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_single_product_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/singleProductNewPrice"
+        style="@style/InterRegular.InterRegular18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleProductViewPager"
+        tools:text="$152.00" />
+
+    <com.dnc.buendeal.core.core.ui.view.DiagonalStrikeTextView
+        android:id="@+id/singleProductPrice"
+        style="@style/InterRegular.InterRegular18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textColor="@color/old_price"
+        app:layout_constraintStart_toEndOf="@+id/singleProductNewPrice"
+        app:layout_constraintTop_toTopOf="@+id/singleProductNewPrice"
+        tools:text="$172.00" />
+
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/singleProductViewRatingStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@+id/singleProductNewPrice"
+        app:layout_constraintTop_toBottomOf="@+id/singleProductNewPrice" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/singleProductElements"
+        style="@style/CardViewBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_default_input"
+        app:layout_constraintEnd_toStartOf="@+id/singleProductShare"
+        app:layout_constraintTop_toBottomOf="@+id/singleProductViewPager">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_elements_single_product" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/singleProductShare"
+        style="@style/CardViewBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/singleProductElements">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_share_single_product" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

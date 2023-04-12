@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputTxtLayout="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/firstNameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        inputTxtLayout:label="@string/label_first_name" />
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/lastNameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTil"
+        inputTxtLayout:label="@string/label_last_name" />
+
+
+    <com.dnc.buendeal.core.core.ui.view.TextInputLayoutFloatingLabel
+        android:id="@+id/phoneTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTil"
+        inputTxtLayout:label="@string/phone_number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

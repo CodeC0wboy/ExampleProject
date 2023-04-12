@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_H1">34sp</dimen>
+    <dimen name="text_size_H2">24sp</dimen>
+    <dimen name="text_size_H3">20sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_H4_B1">16sp</dimen>
+    <dimen name="text_size_H5_B2">14sp</dimen>
+    <dimen name="text_size_capture">12sp</dimen>
+    <dimen name="text_size_overline">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+
+    <dimen name="margin_tiny">1dp</dimen>
+    <dimen name="margin_rating_stars">2dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_medium_x1_5">14dp</dimen>
+    <dimen name="margin_default_input">16dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">40dp</dimen>
+
+    <dimen name="write_review_item_photo">60dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_default_input">16dp</dimen>
+    <dimen name="padding_big">24dp</dimen>
+    <dimen name="padding_huge">45dp</dimen>
+
+    <dimen name="padding_checkbox">12dp</dimen>
+    <dimen name="padding_label_text_input_layout">15dp</dimen>
+
+    <dimen name="margin_image_view">52dp</dimen>
+</resources>

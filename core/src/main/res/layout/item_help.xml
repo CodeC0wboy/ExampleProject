@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_input"
+        android:layout_marginEnd="@dimen/margin_default_input"
+        android:layout_marginTop="@dimen/margin_default_input"
+        android:background="@drawable/option_background_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_big"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="@string/how_you_can_increase_your_sales_with_us"
+            android:textColor="@color/help_delegate_color"
+            app:layout_constraintEnd_toStartOf="@+id/hideBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hideBtn"
+            style="@style/InterMedium.HeaderH4InterMedium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_big"
+            android:text="@string/hide"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_big"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/ic_box_help"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:text="@string/help_item_subtitle1"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/addingProductsDescription"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:text="@string/help_item_description1"
+            android:textColor="@color/rating_votes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_big"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/ic_glasses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addingProductsDescription" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:text="@string/explore_your_competitors"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:text="@string/help_item_description1"
+            android:textColor="@color/rating_votes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_big"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/ic_megaphone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/InterRegular.Body1InterRegular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:text="@string/advertise_with_us"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/description2"
+            style="@style/InterRegular.Body2InterRegular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_input"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:text="@string/help_item_description1"
+            android:textColor="@color/rating_votes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/learnMoreBtn"
+            style="@style/OutLinedBtnGeneralSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_34"
+            android:layout_marginTop="@dimen/margin_default_input"
+            android:layout_marginEnd="@dimen/margin_34"
+            android:layout_marginBottom="@dimen/margin_default_input"
+            android:paddingStart="76dp"
+            android:paddingEnd="76dp"
+            android:text="@string/learn_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

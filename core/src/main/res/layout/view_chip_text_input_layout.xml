@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chipConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:drawablePadding="-8dp"
+            android:focusable="false"
+            android:includeFontPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chipGroup"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="@dimen/margin_default_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chipConstraintInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="@dimen/margin_small_0_5"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputEditTextInner"
+                app:layout_constraintEnd_toStartOf="@+id/textInputEditTextInner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textInputEditTextInner" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextInner"
+                style="@style/InterRegular.Body1InterRegular16"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:layout_marginStart="@dimen/margin_small_0_5"
+                android:hint="@string/keyword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chipGroup"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

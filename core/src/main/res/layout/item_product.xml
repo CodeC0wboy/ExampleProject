@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="156dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemPhotoProduct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/headphones"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="158:180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageViewCornerSize8" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/threeStateBtnHeart"
+        style="@style/SmallCardViewBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/selector_favorite_btn" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/itemTitle"
+        style="@style/InterRegular.Body2InterRegular14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        tools:text="Bose Sport Earbuds – True Wireless Bluetoo..."
+        android:textColor="@color/description_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemPhotoProduct" />
+
+    <com.dnc.buendeal.core.core.ui.view.RatingStarsView
+        android:id="@+id/viewRatingStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
+
+    <com.dnc.buendeal.core.core.ui.view.DiagonalStrikeTextView
+        android:id="@+id/oldPrice"
+        style="@style/InterRegular.CaptureInterRegular13"
+        android:textColor="@color/old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="$172.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewRatingStars" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        style="@style/InterMedium.HeaderH4InterMedium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_big"
+        tools:text="$152.00"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldPrice" />
+
+    <ImageView
+        android:id="@+id/compareButton"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="center"
+        android:src="@drawable/selector_bottom_single_prod_compare"
+        android:theme="@style/colorControlHighlight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewRatingStars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
